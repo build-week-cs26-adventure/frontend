@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  background: #c2feea;
+  height: 110vh;
+  color: black;
+}
+
+.App-header {
+  padding: 25px 0 15px 0;
+}
+
+.Loading-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #0e0e0e;
+  opacity: 0.7;
+  z-index: 9999999999;
+  .loader {
+    position: absolute;
+    width: max-content;
+    margin: 0 auto;
+    color: white;
+  }
+}
+form{display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;input{
+    border: none;
+    border-bottom: 2px solid red;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 10px;
+  };button{    border-radius: 6px;
+    background: #FF7811;
+    border-bottom: solid 2px red;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;}}
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  .inner-square {
+    background: transparent;
+    box-shadow: inset 0px 0px 60px rgba(0, 0, 0, 0.12);
+    border-radius: 70px;
+    margin-bottom: 20px;
+    padding: 12px 24px;
+  }
+  hr {
+    border: 0.5px solid #74c99d;
+  }
+  .room-Detail-text {
+    color:#FF7811;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    margin-bottom: 15px;
+  }
+  .move-Detail-text {
+    color: #dd4c60;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    margin-bottom: 15px;
+  }
+  p {
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+
+    color: #74c99d;
+  }
+  h3 {
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #74c99d;
+  }
+  .map {
+    height: 100%;
+    h3 {
+      margin-bottom: 15px;
+    }
+    p,
+    h3 {
+      text-align: left;
+    }
+    span {
+      font-weight: bold;
+    }
+    img {
+      width: 100%;
+      margin: 15px 0;
+    }
+  }
+  .player-Detail {
+    height: 30vh;
+  }
+  .command-input {
+    height: 70px;
+    input {
+      border: none;
+      background: none;
+      width: 100%;
+    }
+  }
+  .game-Detail {
+    height: calc(80vh - 90px);
+    text-align: left;
+    padding: 20px 24px;
+    overflow-y: scroll;
+  }
+  .players-online {
+    height: 100%;
+    text-align: center;
+    overflow-y: scroll;
+    width:fit-content; p {
+      margin: 15px 0;
+    }
+  }
+
+  button {
+    background: #ea0600;
+    color: 'green';
+    font-weight: 'bold';
+    padding: 10px 20px;
+  }
+
+  .column {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 80vh;
+  }
+  .side {
+    width: calc(20% - 20px);
+  }
+  .middle {
+    width: 60%;
+  }
+}
